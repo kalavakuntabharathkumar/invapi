@@ -37,3 +37,5 @@ def list_orders(): return list(orders.values())
 def get_order(order_id:str):
     if order_id not in orders: raise HTTPException(404,"Order not found")
     return orders[order_id]
+
+# Order API: validated payloads, generated identifiers, and lifecycle timestamps.

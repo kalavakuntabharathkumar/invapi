@@ -18,3 +18,5 @@ def reserve(body:Reservation):
     if available<body.quantity: raise HTTPException(409,"Insufficient stock")
     stock[body.sku]-=body.quantity
     return {"sku":body.sku,"reserved":body.quantity,"remaining":stock[body.sku]}
+
+# Inventory reservation rejects requests that exceed available stock.
