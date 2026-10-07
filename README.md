@@ -19,3 +19,6 @@ API docs:
 - Gateway: http://localhost:8000/docs
 
 This repository is a generated starter project, not a verified reproduction of an existing production system. Performance, failure-rate, user-count, and deployment metrics in a resume must be independently measured before being claimed.
+
+## Event contract
+`order.created` contains the order identifier, customer, SKU, quantity, status, and timestamp. The demo uses in-memory order/stock state; persistence is a follow-up exercise.

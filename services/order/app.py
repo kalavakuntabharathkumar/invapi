@@ -39,3 +39,4 @@ def get_order(order_id:str):
     return orders[order_id]
 
 # Order API: validated payloads, generated identifiers, and lifecycle timestamps.
+# Kafka event delivery is best-effort in this starter; production should use an outbox.
