@@ -22,3 +22,6 @@ This repository is a generated starter project, not a verified reproduction of a
 
 ## Event contract
 `order.created` contains the order identifier, customer, SKU, quantity, status, and timestamp. The demo uses in-memory order/stock state; persistence is a follow-up exercise.
+
+## Known limitations
+The current demo uses in-memory data for the APIs and does not yet provide durable DB migrations, auth, idempotent consumers, or a transactional outbox. Add these before production use.
